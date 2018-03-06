@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
-public class Botvac : MonoBehaviour
+public class Botvac : MonoBehaviour, IInteractable
 {
     public Transform LeftSensor;
     public Transform RightSensor;
@@ -10,6 +11,8 @@ public class Botvac : MonoBehaviour
 
     private float _rayLength = 0.1f;
     private Rigidbody _rigidbody;
+
+    private bool _isTurnedOn = false;
 
 	// Use this for initialization
 	void Start ()
@@ -20,7 +23,7 @@ public class Botvac : MonoBehaviour
 	// Update is called once per frame
     void FixedUpdate()
     {
-        if (!Physics.Raycast(DownSensor.position, -transform.up, _rayLength))
+        if (!_isTurnedOn || !Physics.Raycast(DownSensor.position, -transform.up, _rayLength))
             return;
 
         var close = false;
@@ -42,5 +45,15 @@ public class Botvac : MonoBehaviour
         {
             _rigidbody.MovePosition(transform.position + transform.forward * Time.fixedDeltaTime);
         }
+    }
+
+    public string Description
+    {
+        get { return _isTurnedOn ? "Turn off" : "Turn on"; }
+    }
+
+    public void Interact()
+    {
+        _isTurnedOn = !_isTurnedOn;
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
-public class DoorBlade : MonoBehaviour
+public class DoorBlade : MonoBehaviour, IInteractable
 {
     public float Speed = 0.5f;
 
@@ -17,13 +18,6 @@ public class DoorBlade : MonoBehaviour
         _bladeClosed = Quaternion.Euler(-90f, 0f, 180f);
     }
 
-    void OnMouseDown()
-    {
-        _isOpen = !_isOpen;
-        transform.localRotation = _isOpen ? _bladeOpen : _bladeClosed;
-        _startTime = Time.time;
-    }
-
     void Update()
     {
         if (_startTime > 0)
@@ -33,5 +27,21 @@ public class DoorBlade : MonoBehaviour
                 ? Quaternion.Lerp(_bladeClosed, _bladeOpen, step)
                 : Quaternion.Lerp(_bladeOpen, _bladeClosed, step);
         }
+    }
+
+    void OpenDoor()
+    {
+        _isOpen = !_isOpen;
+        _startTime = Time.time;
+    }
+
+    public string Description
+    {
+        get { return _isOpen ? "Close door" : "Open door"; }
+    }
+
+    public void Interact()
+    {
+        OpenDoor();
     }
 }

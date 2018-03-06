@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4162625952720052}
   - component: {fileID: 33569355467029970}
   - component: {fileID: 23521683070666398}
+  - component: {fileID: 65422096902703340}
   m_Layer: 0
   m_Name: Door-blade_10_20_L
   m_TagString: Untagged
@@ -300,3 +301,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844344608241968}
   m_Mesh: {fileID: 4300000, guid: 91a0d79a2c06f5f48bf4f95881bd3ec2, type: 3}
+--- !u!65 &65422096902703340
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386960647818624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92000043, y: 0.050000355, z: 1.9400003}
+  m_Center: {x: -0.46000028, y: 0.025000084, z: -0.049999963}

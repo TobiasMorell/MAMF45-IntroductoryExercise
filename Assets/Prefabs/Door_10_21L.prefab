@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4953604626164982}
   - component: {fileID: 33467999725875164}
   - component: {fileID: 23559268020049702}
+  - component: {fileID: 65132310585449214}
   m_Layer: 0
   m_Name: Door-blade_10_21_L
   m_TagString: Untagged
@@ -87,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1991587325580042}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.317, y: 0.00000011920929, z: 1.594}
+  m_LocalPosition: {x: 2.017, y: 0.00000011920929, z: 1.623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4953604626164982}
@@ -300,6 +301,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756008864693704}
   m_Mesh: {fileID: 4300004, guid: 69942eb814f089e409a15533c1acce78, type: 3}
+--- !u!65 &65132310585449214
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902075958661952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9200007, y: 0.040000506, z: 2.0400004}
+  m_Center: {x: -0.46000022, y: 0.030000087, z: -0.000000007152607}
 --- !u!95 &95991360632270194
 Animator:
   serializedVersion: 3

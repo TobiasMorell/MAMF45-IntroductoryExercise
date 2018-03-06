@@ -14,6 +14,9 @@ public class OrbitCam : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+	    if (Target == null)
+	        Target = GameObject.FindGameObjectWithTag("CameraTarget").transform;
+
 	    _cam = GetComponent<Camera>();
 	    _isPerspective = !_cam.orthographic;
         _distance = new Vector3(0f, 0f, (transform.position - Target.position).magnitude);
