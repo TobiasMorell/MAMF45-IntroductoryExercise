@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 9a0b1a9ddb9c4214db7871be4bffe2ba
+timeCreated: 1518076149
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Balcony&Terrace
+    100002: Ceiling
+    100004: Door-lining002
+    100006: Door-lining003
+    100008: Door-lining004
+    100010: Door-lining01
+    100012: Floor_lining01
+    100014: Floor_lining02
+    100016: Floor_lining03
+    100018: Floorplan
+    100020: //RootNode
+    100022: Glass
+    100024: Glass002
+    100026: glass003
+    100028: glass004
+    100030: glass005
+    100032: glass006
+    100034: glass007
+    100036: glass008
+    100038: Walls&Floors
+    100040: window 1
+    100042: window 2
+    100044: window 3
+    100046: window 4
+    100048: window 5
+    100050: window 6
+    100052: window 7
+    100054: window 8
+    400000: Balcony&Terrace
+    400002: Ceiling
+    400004: Door-lining002
+    400006: Door-lining003
+    400008: Door-lining004
+    400010: Door-lining01
+    400012: Floor_lining01
+    400014: Floor_lining02
+    400016: Floor_lining03
+    400018: Floorplan
+    400020: //RootNode
+    400022: Glass
+    400024: Glass002
+    400026: glass003
+    400028: glass004
+    400030: glass005
+    400032: glass006
+    400034: glass007
+    400036: glass008
+    400038: Walls&Floors
+    400040: window 1
+    400042: window 2
+    400044: window 3
+    400046: window 4
+    400048: window 5
+    400050: window 6
+    400052: window 7
+    400054: window 8
+    2100000: Floorplan
+    2100002: Concrete
+    2100004: Standard white
+    2100006: Innerwall_01
+    2100008: Oak_01
+    2100010: Bathroom_walls
+    2100012: Innerwall_02
+    2100014: Floor_oak
+    2100016: Bathroom floor
+    2100018: Window-stone
+    2100020: Glass
+    2300000: Balcony&Terrace
+    2300002: Ceiling
+    2300004: Door-lining002
+    2300006: Door-lining003
+    2300008: Door-lining004
+    2300010: Door-lining01
+    2300012: Floor_lining01
+    2300014: Floor_lining02
+    2300016: Floor_lining03
+    2300018: Floorplan
+    2300020: Glass
+    2300022: Glass002
+    2300024: glass003
+    2300026: glass004
+    2300028: glass005
+    2300030: glass006
+    2300032: glass007
+    2300034: glass008
+    2300036: Walls&Floors
+    2300038: window 1
+    2300040: window 2
+    2300042: window 3
+    2300044: window 4
+    2300046: window 5
+    2300048: window 6
+    2300050: window 7
+    2300052: window 8
+    3300000: Balcony&Terrace
+    3300002: Ceiling
+    3300004: Door-lining002
+    3300006: Door-lining003
+    3300008: Door-lining004
+    3300010: Door-lining01
+    3300012: Floor_lining01
+    3300014: Floor_lining02
+    3300016: Floor_lining03
+    3300018: Floorplan
+    3300020: Glass
+    3300022: Glass002
+    3300024: glass003
+    3300026: glass004
+    3300028: glass005
+    3300030: glass006
+    3300032: glass007
+    3300034: glass008
+    3300036: Walls&Floors
+    3300038: window 1
+    3300040: window 2
+    3300042: window 3
+    3300044: window 4
+    3300046: window 5
+    3300048: window 6
+    3300050: window 7
+    3300052: window 8
+    4300000: Floorplan
+    4300002: Walls&Floors
+    4300004: window 1
+    4300006: Glass
+    4300008: window 3
+    4300010: glass003
+    4300012: window 4
+    4300014: glass004
+    4300016: window 5
+    4300018: glass005
+    4300020: window 6
+    4300022: glass006
+    4300024: window 7
+    4300026: glass007
+    4300028: window 8
+    4300030: glass008
+    4300032: Ceiling
+    4300034: Balcony&Terrace
+    4300036: window 2
+    4300038: Glass002
+    4300040: Door-lining01
+    4300042: Door-lining002
+    4300044: Door-lining003
+    4300046: Door-lining004
+    4300048: Floor_lining01
+    4300050: Floor_lining02
+    4300052: Floor_lining03
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bathroom floor
+    second: {fileID: 2100000, guid: fdbb8a406c66e4d4a8ac932cb1075c2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bathroom_walls
+    second: {fileID: 2100000, guid: 28bd0513be50aaf46aad419e1ea2ecd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete
+    second: {fileID: 2100000, guid: be6ebff7d39b2cd47ad05a4da7b46222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_oak
+    second: {fileID: 2100000, guid: eb02843a7d9589a49b2f981369068287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floorplan
+    second: {fileID: 2100000, guid: 9a9aa39391cae9d419c0705328167a26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 92b8b20a5fa0a614bbd730f00978e1ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Innerwall_01
+    second: {fileID: 2100000, guid: 24d91495593ecd54594d324bde68d9ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Innerwall_02
+    second: {fileID: 2100000, guid: 18751230e43d905499bc62cb5514ec49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_01
+    second: {fileID: 2100000, guid: 2bdd1e43fe0c5a64fba3960a5d1c8564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standard white
+    second: {fileID: 2100000, guid: 97c94a29d6e740e408c708605b4fe8d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window-stone
+    second: {fileID: 2100000, guid: aca81994926e6a449af754faa8c3ff2d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azul_Valverde
+    second: {fileID: 2800000, guid: 7716be33f0c07714d860ca4305600162, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete-wall
+    second: {fileID: 2800000, guid: 1b88722dc6b4cee4eba0674bc027c49c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dow_styrofoam
+    second: {fileID: 2800000, guid: d28831991cb29b345ad4b24543af28a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FloorPlan_1024
+    second: {fileID: 2800000, guid: ce104d568b65c554385d20bbb43f02ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Floor_oak_3-strip_01s
+    second: {fileID: 2800000, guid: d70d3dd83c2ab1648b998b6c496ee542, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Foamular_pink
+    second: {fileID: 2800000, guid: 165de68b2075dc84d96f5de84fe74f8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Unfinished_01
+    second: {fileID: 2800000, guid: 4c3acb8630a5da04f939fea8acb1ce64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Unfinished_02
+    second: {fileID: 2800000, guid: d5f4c1fd39265fe478b86a44eadd10d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: oak_01
+    second: {fileID: 2800000, guid: dca61338072d5a64bb2c4a8a147b52f2, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
