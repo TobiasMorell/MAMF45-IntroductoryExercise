@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine;
 public class DoorBlade : MonoBehaviour, IInteractable
 {
     public float Speed = 0.5f;
+    public float OpenRotation = 0f;
 
     private float _startTime = 0;
     private bool _isOpen = true;
@@ -14,7 +16,13 @@ public class DoorBlade : MonoBehaviour, IInteractable
 
     void Start()
     {
-        _bladeOpen = transform.localRotation;
+        if (Math.Abs(OpenRotation) < Mathf.Epsilon)
+            _bladeOpen = transform.localRotation;
+        else
+        {
+            _isOpen = false;
+            _bladeOpen = Quaternion.Euler(-90f, OpenRotation, 180f);
+        }
         _bladeClosed = Quaternion.Euler(-90f, 0f, 180f);
     }
 

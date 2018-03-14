@@ -19,7 +19,10 @@ public class Laptop : MonoBehaviour, IInteractable
         _screenClosed = Quaternion.Euler(90f, 0f, 0f);
     }
 
-    public string Description { get; private set; }
+    public string Description
+    {
+        get { return _open ? "Close lid" : "Open lid";}
+    }
     public void Interact()
     {
         _startTime = Time.time;
@@ -28,10 +31,13 @@ public class Laptop : MonoBehaviour, IInteractable
 
     private IEnumerator ChangeLidRotation(Quaternion start, Quaternion end)
     {
-        while (_startTime > 0)
+        while (_startTime > 0f)
         {
             var step = (Time.time - _startTime) * Speed;
             Screen.localRotation = Quaternion.Lerp(start, end, step);
+            _startTime -= Time.deltaTime;
+            if (step >= 1f)
+                break;
             yield return null;
         }
 

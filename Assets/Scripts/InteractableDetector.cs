@@ -24,10 +24,9 @@ public class InteractableDetector : MonoBehaviour
             _latestHit.Interact();
 	        return;
 	    }
-
-        var ray = new Ray(transform.position, transform.forward);
+        
+        var ray = new Ray(transform.position, transform.forward );
 	    var hits = Physics.RaycastAll(ray, _maxDetectionDistance);
-        Debug.Log(hits.Length);
 
 	    foreach (var raycastHit in hits)
 	    {
