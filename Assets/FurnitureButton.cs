@@ -8,6 +8,7 @@ public class FurnitureButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     public GameObject FurnitureDetails;
     public Image FurnitureImage;
+    private Furniture _furniture;
 
     public void OnPointerEnter(PointerEventData eData)
     {
@@ -23,6 +24,7 @@ public class FurnitureButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void DisplayProduct(Furniture product)
     {
+        _furniture = product;
         if (product.SampleImage != null)
             FurnitureImage.sprite = product.SampleImage;
         GetComponentInChildren<Text>().text = product.Name;
@@ -30,5 +32,10 @@ public class FurnitureButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         details[0].text = product.Manufacturer;
         details[1].text = product.Price.ToString() + "$";
         details[2].text = product.Description;
+    }
+
+    public void OnClick()
+    {
+
     }
 }

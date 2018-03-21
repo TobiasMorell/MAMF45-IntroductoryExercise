@@ -7,7 +7,7 @@ public class InteriorCatalog : MonoBehaviour {
     public Furniture[] Furniture { get; private set; }
     public int HorizontalOffset = 230;
     public int VerticalOffset = -205;
-    public GameObject FurnitureUIPrefab;
+    public GameObject FurnitureUiPrefab;
     public GameObject FurnitureUi;
 
 	// Use this for initialization
@@ -16,15 +16,15 @@ public class InteriorCatalog : MonoBehaviour {
 	    Furniture = Resources.LoadAll("Interior", typeof(Furniture)).Select(o => (Furniture) o).ToArray();
 	    Debug.Log("Loaded " + Furniture.Length + " models");
 
-	    for (int i = 0; i < Furniture.Length; i++)
+	    for (var i = 0; i < Furniture.Length; i++)
 	    {
 	        var row = i / 2;
 	        var col = i % 2;
 
-	        var fInst = Instantiate(FurnitureUIPrefab);
+	        var fInst = Instantiate(FurnitureUiPrefab);
 	        var fRect = fInst.GetComponent<RectTransform>();
 	        fRect.SetParent(FurnitureUi.transform, false);
-            fRect.anchoredPosition = new Vector3(col * HorizontalOffset, row * VerticalOffset);
+            fRect.anchoredPosition = fRect.anchoredPosition + new Vector2(col * HorizontalOffset, row * VerticalOffset);
 	    }
 	}
 }

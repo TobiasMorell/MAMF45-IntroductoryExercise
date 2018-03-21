@@ -8,12 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 2888fec5c9361744eae31e4250eb41d9, type: 3}
   m_Name: Bass
-  m_EditorClassIdentifier: Assembly-CSharp::Furniture
+  m_EditorClassIdentifier: 
   Name: Jazz Bass
   Manufacturer: Fender
-  Description: Fender's traditional Jazz Bass, created first in 1960 by Leo Fender.
+  Description: A traditional Fender Jazz Bass, designed by Leo Fender in 1960.
   SnapsToWall: 0
   SnapsToFloor: 0
   Model: {fileID: 100000, guid: b26172f43d5c6ba4d9b57185de55b58d, type: 2}
