@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Furniture
+  m_EditorClassIdentifier: Assembly-CSharp::Furniture
+  Name: Flatscreen TV
+  Manufacturer: Sumsang
+  Description: Highend flatscreen TV, capable of displaying images in Ultra 4K HD.
+  SnapsToWall: 1
+  SnapsToFloor: 0
+  Model: {fileID: 1998936053308864, guid: 0c0a85f96ab95924a9d0d00d3fc8666f, type: 2}
+  Price: 800
+  SampleImage: {fileID: 0}

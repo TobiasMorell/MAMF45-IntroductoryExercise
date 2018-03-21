@@ -30,7 +30,6 @@ public class InteractableDetector : MonoBehaviour
 
 	    foreach (var raycastHit in hits)
 	    {
-            Debug.Log(raycastHit.collider.name);
 	        var interactionScript = raycastHit.collider.GetComponentInParent<IInteractable>();
 	        if (interactionScript == null) continue;
 
