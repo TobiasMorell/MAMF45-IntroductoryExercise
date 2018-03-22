@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.UIElements;
+using System;
 
 public class Builder : MonoBehaviour
 {
@@ -18,6 +19,22 @@ public class Builder : MonoBehaviour
     private GameObject _furnitureInstance;
     private Material _originalMaterial;
     private MeshRenderer _instanceMeshRenderer;
+
+    public static Builder Instance {
+        get
+        {
+            return _instance;
+        }
+    }
+    private static Builder _instance;
+
+    void Start()
+    {
+        if (_instance != null)
+            throw new InvalidOperationException(
+                "The builder script is singleton, please make sure only one is assigned!");
+        _instance = this;
+    }
 	
 	// Update is called once per frame
 	void Update ()

@@ -36,6 +36,6 @@ public class FurnitureButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnClick()
     {
-
+        Builder.Instance.BeginBuilding(_furniture);
     }
 }

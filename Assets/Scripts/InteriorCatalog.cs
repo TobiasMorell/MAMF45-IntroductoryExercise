@@ -27,4 +27,36 @@ public class InteriorCatalog : MonoBehaviour {
             fRect.anchoredPosition = fRect.anchoredPosition + new Vector2(col * HorizontalOffset, row * VerticalOffset);
 	    }
 	}
+
+    public void OpenUi()
+    {
+        var cg = GetComponent<CanvasGroup>();
+        cg.interactable = true;
+        cg.blocksRaycasts = true;
+        StartCoroutine(FadeUi(cg));
+    }
+
+    public void CloseUi()
+    {
+        var cg = GetComponent<CanvasGroup>();
+        cg.interactable = false;
+        cg.blocksRaycasts = false;
+        StartCoroutine(FadeUi(cg));
+    }
+
+    IEnumerator FadeUi(CanvasGroup cg, float speed = 0.2f)
+    {
+        var start = cg.alpha;
+        var increasing = start == 0;
+
+        while ((increasing && start < 1) || (!increasing && start > 0))
+        {
+            if (increasing)
+                start += speed;
+            else
+                start -= speed;
+            cg.alpha = start;
+            yield return null;
+        }
+    }
 }

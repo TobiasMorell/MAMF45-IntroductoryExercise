@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class InteractableDetector : MonoBehaviour
 {
     [SerializeField] private float _maxDetectionDistance;
-    [SerializeField] private Text _descriptionText;
+    [SerializeField] private GameObject _descriptionText;
     public KeyCode InteractionButton;
     private IInteractable _latestHit;
 
     void Start()
     {
-        _descriptionText = GameObject.FindGameObjectWithTag("InteractionText").GetComponent<Text>();
+        _descriptionText = GameObject.FindGameObjectWithTag("InteractionText");
     }
 
 	// Update is called once per frame
@@ -34,7 +34,7 @@ public class InteractableDetector : MonoBehaviour
 	        if (interactionScript == null) continue;
 
 	        _latestHit = interactionScript;
-	        _descriptionText.text = InteractionButton + ": " + interactionScript.Description;
+	        _descriptionText.GetComponent<Text>().text = InteractionButton + ": " + interactionScript.Description;
 	        _descriptionText.enabled = true;
 	        return;
 	    }
