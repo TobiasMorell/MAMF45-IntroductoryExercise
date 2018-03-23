@@ -18,4 +18,4 @@ MonoBehaviour:
   SnapsToFloor: 1
   Model: {fileID: 1293244141219964, guid: a449751494be1eb4692cca37fa3df16b, type: 2}
   Price: 20
-  SampleImage: {fileID: 0}
+  SampleImage: {fileID: 21300000, guid: 2034a56e6b5c94c419fe0510655b37ef, type: 3}

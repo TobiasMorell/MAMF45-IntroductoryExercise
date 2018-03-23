@@ -22,6 +22,8 @@ public class InteriorCatalog : MonoBehaviour {
 	        var col = i % 2;
 
 	        var fInst = Instantiate(FurnitureUiPrefab);
+            fInst.GetComponent<FurnitureButton>().DisplayProduct(Furniture[i]);
+
 	        var fRect = fInst.GetComponent<RectTransform>();
 	        fRect.SetParent(FurnitureUi.transform, false);
             fRect.anchoredPosition = fRect.anchoredPosition + new Vector2(col * HorizontalOffset, row * VerticalOffset);

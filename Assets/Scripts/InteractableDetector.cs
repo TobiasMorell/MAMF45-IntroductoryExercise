@@ -35,7 +35,7 @@ public class InteractableDetector : MonoBehaviour
 	        if (interactionScript != null)
 	        {
 	            _latestHit = interactionScript;
-	            _descriptionText.GetComponent<Text>().text = InteractionButton + ": " + interactionScript.Description;
+	            _descriptionText.GetComponentInChildren<Text>().text = InteractionButton + ": " + interactionScript.Description;
 	            _descriptionText.SetActive(true);
 	            return;
 	        }

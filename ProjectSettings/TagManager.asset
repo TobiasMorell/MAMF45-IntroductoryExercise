@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CameraTarget
   - InteractionText
+  - Furniture
   layers:
   - Default
   - TransparentFX

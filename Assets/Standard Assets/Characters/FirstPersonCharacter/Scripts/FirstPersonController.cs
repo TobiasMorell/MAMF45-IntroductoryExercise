@@ -42,6 +42,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public void DisableMovement()
+        {
+            m_MouseLook.lockCursor = false;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            enabled = false;
+        }
+
+        public void EnableMovemnet()
+        {
+            m_MouseLook.lockCursor = true;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Confined;
+            enabled = true;
+        }
+
         // Use this for initialization
         private void Start()
         {
@@ -56,12 +72,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
-
-        public void DisableMovement()
-        {
-            
-        }
-
 
         // Update is called once per frame
         private void Update()

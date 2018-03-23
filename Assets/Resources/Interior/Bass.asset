@@ -16,6 +16,6 @@ MonoBehaviour:
   Description: A traditional Fender Jazz Bass, designed by Leo Fender in 1960.
   SnapsToWall: 0
   SnapsToFloor: 0
-  Model: {fileID: 100000, guid: b26172f43d5c6ba4d9b57185de55b58d, type: 2}
+  Model: {fileID: 1850191432029116, guid: 06efb3ed6ceb8fc4f9488e08614224fd, type: 2}
   Price: 1200
-  SampleImage: {fileID: 0}
+  SampleImage: {fileID: 21300000, guid: 92e914a36ea6e864f88b60f96ed505ba, type: 3}

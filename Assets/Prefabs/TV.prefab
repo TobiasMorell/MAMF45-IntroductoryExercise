@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33797287618600942}
   - component: {fileID: 23528766037341992}
   - component: {fileID: 65476660294078910}
+  - component: {fileID: 114904062910536860}
   m_Layer: 0
   m_Name: TV
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -95,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1313912, y: 0.727227, z: 0.22654866}
   m_Center: {x: -0.00003391505, y: 0.36427206, z: -0.006095798}
+--- !u!114 &114904062910536860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949611561280672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc17e1055c40a445a4fb912f7f573b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Furniture: {fileID: 11400000, guid: 7190b6a69e6e15745a3e6c473d80456f, type: 2}

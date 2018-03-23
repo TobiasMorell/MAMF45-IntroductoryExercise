@@ -10,21 +10,39 @@ public class ActionCircle : MonoBehaviour
     {
         if (!_open && Input.GetMouseButtonUp(1))
             OpenActionCircle();
-        else if (_open && Input.GetKeyUp(KeyCode.Escape))
+        else if (_open && Input.GetMouseButtonUp(1))
             CloseActionCircle(true);
     }
 
-    void OpenActionCircle()
+    public void OpenActionCircle()
     {
         _open = true;
         var cg = GetComponent<CanvasGroup>();
         cg.Open();
     }
 
-    void CloseActionCircle(bool hideCursor = false)
+    public void CloseActionCircle(bool hideCursor = false)
     {
         _open = false;
         var cg = GetComponent<CanvasGroup>();
         cg.Close(hideCursor);
+    }
+
+    public void BeginMove()
+    {
+        Builder.Instance.BeginSelection(SelectionMode.Move);
+        CloseActionCircle(true);
+    }
+
+    public void BeginDelete()
+    {
+        Builder.Instance.BeginSelection(SelectionMode.Delete);
+        CloseActionCircle(true);
+    }
+
+    public void BeginInspect()
+    {
+        Builder.Instance.BeginSelection(SelectionMode.Inspect);
+        CloseActionCircle(true);
     }
 }
