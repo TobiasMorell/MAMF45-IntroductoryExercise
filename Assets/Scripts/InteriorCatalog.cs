@@ -31,32 +31,14 @@ public class InteriorCatalog : MonoBehaviour {
     public void OpenUi()
     {
         var cg = GetComponent<CanvasGroup>();
-        cg.interactable = true;
-        cg.blocksRaycasts = true;
-        StartCoroutine(FadeUi(cg));
+        cg.Open();
     }
 
     public void CloseUi()
     {
         var cg = GetComponent<CanvasGroup>();
-        cg.interactable = false;
-        cg.blocksRaycasts = false;
-        StartCoroutine(FadeUi(cg));
+        cg.Close(true);
     }
 
-    IEnumerator FadeUi(CanvasGroup cg, float speed = 0.2f)
-    {
-        var start = cg.alpha;
-        var increasing = start == 0;
-
-        while ((increasing && start < 1) || (!increasing && start > 0))
-        {
-            if (increasing)
-                start += speed;
-            else
-                start -= speed;
-            cg.alpha = start;
-            yield return null;
-        }
-    }
+    
 }

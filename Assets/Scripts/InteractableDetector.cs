@@ -14,6 +14,7 @@ public class InteractableDetector : MonoBehaviour
     void Start()
     {
         _descriptionText = GameObject.FindGameObjectWithTag("InteractionText");
+        _descriptionText.SetActive(false);
     }
 
 	// Update is called once per frame
@@ -26,20 +27,21 @@ public class InteractableDetector : MonoBehaviour
 	    }
         
         var ray = new Ray(transform.position, transform.forward );
-	    var hits = Physics.RaycastAll(ray, _maxDetectionDistance);
+	    RaycastHit hit;
 
-	    foreach (var raycastHit in hits)
+	    if (Physics.Raycast(ray, out hit, _maxDetectionDistance))
 	    {
-	        var interactionScript = raycastHit.collider.GetComponentInParent<IInteractable>();
-	        if (interactionScript == null) continue;
-
-	        _latestHit = interactionScript;
-	        _descriptionText.GetComponent<Text>().text = InteractionButton + ": " + interactionScript.Description;
-	        _descriptionText.enabled = true;
-	        return;
+	        var interactionScript = hit.collider.GetComponentInParent<IInteractable>();
+	        if (interactionScript != null)
+	        {
+	            _latestHit = interactionScript;
+	            _descriptionText.GetComponent<Text>().text = InteractionButton + ": " + interactionScript.Description;
+	            _descriptionText.SetActive(true);
+	            return;
+	        }
 	    }
 
-	    _descriptionText.enabled = false;
+	    _descriptionText.SetActive(false);
 	    _latestHit = null;
 	}
 }
